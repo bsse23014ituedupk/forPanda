@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proposal for My Panda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="night-sky" aria-hidden="true">
+      <div class="aurora aurora-one"></div>
+      <div class="aurora aurora-two"></div>
+      <div class="neon-grid"></div>
+      <div class="particle-layer" id="particleLayer"></div>
+    </div>
+
+    <div class="cursor-paw" aria-hidden="true"></div>
+
+    <button class="sound-toggle" type="button" aria-pressed="false" aria-label="Toggle background music">
+      <span class="sound-icon" aria-hidden="true">&#9835;</span>
+      <span class="sound-label">Off</span>
+    </button>
+
+    <div class="progress-dots" aria-label="Proposal progress">
+      <span class="dot is-active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <main class="proposal-shell">
+      <section class="proposal-section landing-section active" id="landing" aria-labelledby="landing-title">
+        <div class="landing-bg-image" aria-hidden="true"></div>
+        <div class="landing-copy">
+          <p class="eyebrow">A little neon love letter</p>
+          <h1 id="landing-title" class="display-title" data-animate>For My Panda</h1>
+          <p class="script-line">Sobia, this was made quietly, carefully, and only for you.</p>
+        </div>
+
+        <button class="panda-peek" type="button" aria-label="Panda secret">
+          <span class="image-fill" data-image-candidates="images/panda.png,images/panda.jpg,images/panda.jpeg,images/panda.webp,images/sobia.png,images/sobia.jpg,images/sobia.webp"></span>
+          <span class="panda-art">
+            <span class="panda-ear ear-left"></span>
+            <span class="panda-ear ear-right"></span>
+            <span class="panda-face">
+              <span class="panda-eye eye-left"></span>
+              <span class="panda-eye eye-right"></span>
+              <span class="panda-nose"></span>
+            </span>
+          </span>
+        </button>
+
+        <button class="panda-next enter-button" type="button" data-next>
+          <span class="button-panda" aria-hidden="true">
+            <span class="button-ear left"></span>
+            <span class="button-ear right"></span>
+            <span class="button-face">
+              <span class="button-eye left"></span>
+              <span class="button-eye right"></span>
+              <span class="button-nose"></span>
+            </span>
+          </span>
+          <span>Enter</span>
+        </button>
+      </section>
+
+      <section class="proposal-section why-section sect-1" id="why-panda" aria-labelledby="why-title" aria-hidden="true">
+        <div class="why-copy">
+          <p class="eyebrow">Why I call you Panda</p>
+          <h2 id="why-title" data-animate>Because the name feels like you.</h2>
+          <p>
+            Panda became your name in my heart because it carries the same softness I see in you:
+            gentle, sweet, a little playful, and impossible for me to ignore. It is not just a cute
+            nickname anymore. It is the feeling I get when I think of your smile, your calm, and the
+            way you make ordinary moments feel warmer.
+          </p>
+        </div>
+
+        <aside class="neon-note">
+          <span class="note-glow"></span>
+          <p class="script-line">My Panda, you make the world feel softer.</p>
+        </aside>
+
+        <button class="panda-next section-next" type="button" data-next>
+          <span class="paw-mark" aria-hidden="true"></span>
+          <span>Next</span>
+        </button>
+      </section>
+
+      <section class="proposal-section memory-section sect-2" id="memory-lane" aria-labelledby="memory-title" aria-hidden="true">
+        <div class="section-heading">
+          <p class="eyebrow">Memory lane</p>
+          <h2 id="memory-title" data-animate>Little things I keep remembering.</h2>
+        </div>
+
+        <div class="memory-grid" aria-label="Moments I love about Sobia">
+          <article class="memory-card" tabindex="0">
+            <div class="memory-image" data-image-candidates="images/memory1.jpeg,images/memory1.jpg,images/memory1.png,images/memory1.webp"></div>
+            <div class="memory-copy">
+              <span class="card-number">01</span>
+              <h3>Your Smile</h3>
+              <p>It has this quiet way of changing the mood around me, even before you say anything.</p>
+            </div>
+          </article>
+
+          <article class="memory-card" tabindex="0">
+            <div class="memory-image" data-image-candidates="images/memory4.jpeg,images/memory4.jpg,images/memory4.png,images/memory4.webp"></div>
+            <div class="memory-copy">
+              <span class="card-number">02</span>
+              <h3>Your Heart</h3>
+              <p>I notice your kindness in small moments, and those small moments are exactly why you matter.</p>
+            </div>
+          </article>
+
+          <article class="memory-card" tabindex="0">
+            <div class="memory-image" data-image-candidates="images/memory3.jpeg,images/memory3.jpg,images/memory3.png,images/memory3.webp"></div>
+            <div class="memory-copy">
+              <span class="card-number">03</span>
+              <h3>Your Presence</h3>
+              <p>With you, even silence feels comfortable. That peace is rare, and I do not take it lightly.</p>
+            </div>
+          </article>
+        </div>
+
+        <button class="panda-next section-next" type="button" data-next>
+          <span class="paw-mark" aria-hidden="true"></span>
+          <span>Next</span>
+        </button>
+      </section>
+
+      <section class="proposal-section invitation-section sect-3" id="proposal-card" aria-labelledby="proposal-title" aria-hidden="true">
+        <div class="proposal-card">
+          <div class="card-shimmer" aria-hidden="true"></div>
+          <div class="wax-seal" aria-hidden="true">P</div>
+          <p class="eyebrow">From me, to my Panda</p>
+          <h2 id="proposal-title" data-animate>Sobia, I mean this sincerely.</h2>
+          <p>
+            Sobia, I do not want to say beautiful words just because this is a proposal. I want to say
+            the truth simply: you have become very special to me. Calling you Panda is my small way of
+            holding all the softness, sweetness, and comfort I feel with you. I want a future where I
+            can protect your smile, respect your heart, and keep choosing you with honesty. I want to
+            marry you one day, not for a perfect story, but for a real life where we build peace,
+            trust, laughter, and a home together.
+          </p>
+        </div>
+
+        <button class="panda-next section-next" type="button" data-next>
+          <span class="paw-mark" aria-hidden="true"></span>
+          <span>Next</span>
+        </button>
+      </section>
+
+      <section class="proposal-section ask-section sect-4" id="ask" aria-labelledby="ask-title" aria-hidden="true">
+        <div class="ask-copy">
+          <p class="eyebrow">The question</p>
+          <h2 id="ask-title" data-animate>Will you be mine forever, Panda?</h2>
+          <p class="script-line">No drama. Just my heart, glowing a little too loudly for you.</p>
+        </div>
+
+        <div class="answer-row">
+          <button class="yes-button" type="button" data-next>Yes</button>
+          <button class="runaway-button" type="button">Think about it</button>
+        </div>
+      </section>
+
+      <section class="proposal-section reaction-section sect-5" id="reaction" aria-labelledby="reaction-title" aria-hidden="true">
+        <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+        <div class="floating-party" id="floatingParty" aria-hidden="true"></div>
+        <div class="reaction-card">
+          <div class="reaction-image" data-image-candidates="images/yes.jpg,images/yes.png,images/yes.webp,images/couple.jpg,images/couple.png,images/sobia.jpg,images/panda.jpg"></div>
+          <p class="eyebrow">A forever kind of yes</p>
+          <h2 id="reaction-title" data-animate>My Panda said yes.</h2>
+          <p>
+            Thank you, Sobia, for being you. I hope this little glowing world made you feel even a
+            small part of how special you are to me.
+          </p>
+        </div>
+        <button class="panda-next restart-button" type="button" data-restart>
+          <span class="paw-mark" aria-hidden="true"></span>
+          <span>Again</span>
+        </button>
+      </section>
+    </main>
+
+    <div class="secret-toast" role="status" aria-live="polite">
+      Secret unlocked: Panda gets unlimited care, respect, and soft hugs.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
